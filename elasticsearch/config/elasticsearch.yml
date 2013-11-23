@@ -463,7 +463,7 @@ index:
           convert_type: "t2s"
       my_string2int:
           type: "string2int"
-          redis_server: "127.0.0.1"
+          redis_server: ${OPENSHIFT_DIY_IP}
           redis_port: 6379
           redis_key: "index1_type2_name2"
 
@@ -559,7 +559,7 @@ index:
           convert_type: "t2s"
       string2int:
           type: org.elasticsearch.index.analysis.String2IntAnalyzerProvider 
-          redis_server: "127.0.0.1"
+          redis_server: ${OPENSHIFT_DIY_IP}
           redis_port: 6379
           redis_key: "index1_type1_name1"
       custom_string2int:
