@@ -367,7 +367,7 @@ path.data: ${OPENSHIFT_DATA_DIR}/data
 path.logs: ${OPENSHIFT_DATA_DIR}/logs
 path.work: ${OPENSHIFT_DATA_DIR}/work
 network.host: ${OPENSHIFT_DIY_IP}
-transport.tcp.port: 3306
+transport.tcp.port: 95002
 http.port: ${OPENSHIFT_DIY_PORT}
 
 index:
