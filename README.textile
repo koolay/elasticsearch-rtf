@@ -1,21 +1,4 @@
-解决权限问题
-sudo chmod -R 777 /bin
-
-如何使用？
-
-0.运行环境
-JDK6以上，建议使用JDK7
-
-1.下载
-<pre>git clone git://github.com/medcl/elasticsearch-rtf.git --depth=1</pre>
-
-2.运行
-linux:
-<pre>cd elasticsearch/bin/service
-./elasticsearch console
-</pre>
-
-windows:
-<pre>cd elasticsearch/bin/service
-elasticsearch.bat
-</pre>
+[program:es]
+command=/var/elasticsearch/bin/service/elasticsearch start
+autorstart=true
+autorestart=true
